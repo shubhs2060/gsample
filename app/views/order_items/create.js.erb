@@ -1,7 +1,6 @@
 <% if @order.errors.any? || @order_item.errors.any? %>
 console.log("some error");
 <% else %>
-	alert("No error");
 
   $(".cart-text").html("<%= escape_javascript(render 'layouts/cart_text') %>")
 <% end %>
