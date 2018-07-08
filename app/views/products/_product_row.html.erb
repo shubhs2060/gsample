@@ -3,6 +3,7 @@
   <div class="row">
     <div class="col-xs-8">
       <h4><%= product.name %></small></h4>
+      <h5>Tags: <%= product.tags.map(&:name).join(", ") %></h5>
     </div>
     <div class="col-xs-4">
 
