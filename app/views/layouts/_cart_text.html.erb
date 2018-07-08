@@ -1,0 +1,5 @@
+<%= link_to "#{current_order.order_items.size} Items in Cart ( #{ current_order.subtotal} Rs) ", cart_path, class: "btn btn-link" %>
+<br>
+<br>
+
+<%= link_to "#{current_order.order_items.size} Items in Cart(Including taxes 15%) ( #{ current_order.subtotal * 0.15 + (current_order.subtotal)} Rs) ", cart_path, class: "btn btn-link" %>

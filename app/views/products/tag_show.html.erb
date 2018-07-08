@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+
+<% if @tags.present? %>
+  <strong>Product with this tag are:</strong>
+  <% @tag.products.each do |product| %>
+
+
+  	<p><%= product.name %></p>
+
+<% end %>
+<% else %>
+
+<h2>No Product found for this tag</h2>
+<% end %>
+
