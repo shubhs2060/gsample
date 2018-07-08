@@ -27,7 +27,7 @@
   <%= form.collection_check_boxes :tag_ids, Tag.all, :id, :name do |b| %>
     <div class="collection-check-box">
       <%= b.check_box %>
-      <%= b.label %>
+      <span><%= b.label %></span>
     </div>
   <% end %>
 </div>

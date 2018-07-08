@@ -17,6 +17,7 @@ Tag.create(:name => "Chicken")
 Tag.create(:name => "Chocolate")
 Tag.create(:name => "Cake")
 Tag.create(:name => "Dessert")
+Tag.create(:name => "Veg")
 
 
 # Create order Status
