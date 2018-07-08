@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<h2>Search</h2>
 <%= form_tag search_path, method: :post do %>
   <%= text_field_tag :search_name, nil, placeholder: "Enter a tag to search products",style: "width: 40%;" %>
   <%= submit_tag "Search" %>
