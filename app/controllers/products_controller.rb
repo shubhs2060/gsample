@@ -66,7 +66,7 @@ class ProductsController < ApplicationController
   end
 
   def search
-     @tag = Tag.find_by_name params[:search_name].downcase
+     @tag = Tag.find_by_name params[:search_name].capitalize
      render action: 'tag_show'
 
   end
